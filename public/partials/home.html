@@ -1,0 +1,6 @@
+<h1>Hello</h1>
+<div ng-repeat="item in images">
+  <button class="f" ng-click="play(item.src)">{{$index + 1}}</button>
+</div>
+<img ng-repeat="image in images" ng-src="{{image.src}}" alt="{{image.src}}" />
+<audio id="player" ng-src="{{sound.src}}"></audio>
